@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="it.smc.liferay.feedback.service.ManagerLocalService" class="it.smc.liferay.feedback.service.impl.ManagerLocalServiceImpl" />
+	<bean id="it.smc.liferay.feedback.service.ManagerService" class="it.smc.liferay.feedback.service.impl.ManagerServiceImpl" />
+	<bean id="it.smc.liferay.feedback.service.persistence.ManagerPersistence" class="it.smc.liferay.feedback.service.persistence.ManagerPersistenceImpl" parent="basePersistence" />
+	<bean id="it.smc.liferay.feedback.service.persistence.ManagerFinder" class="it.smc.liferay.feedback.service.persistence.ManagerFinderImpl" parent="basePersistence" />
+</beans>

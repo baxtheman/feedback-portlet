@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<custom-sql>
+<sql id="it.smc.liferay.feedback.service.persistence.ManagerFinder.countByC_G_P_D_UM_S">
+		<![CDATA[
+			SELECT
+				COUNT(*) AS COUNT_VALUE
+			FROM
+				[$TABLE_NAME$]
+			WHERE
+				([$TABLE_NAME$].companyId = ?) AND
+				([$TABLE_NAME$].groupId = ?) [$AND_CONNECTOR$]
+				(
+					([$TABLE_NAME$].plid = ?) [$AND_OR_CONNECTOR$]
+					(lower([$TABLE_NAME$].description) LIKE ?) [$AND_OR_CONNECTOR$]
+					([$TABLE_NAME$].userManagerId = ?) [$AND_OR_CONNECTOR$]
+					([$TABLE_NAME$].status = ?) [$AND_OR_CONNECTOR$]
+				)
+		]]>
+	</sql>
+	<sql id="it.smc.liferay.feedback.service.persistence.ManagerFinder.findByC_G_P_D_UM_S">
+		<![CDATA[
+			SELECT
+				{[$TABLE_NAME$].*}
+			FROM
+				[$TABLE_NAME$]
+			WHERE
+				([$TABLE_NAME$].companyId = ?) AND
+				([$TABLE_NAME$].groupId = ?) [$AND_CONNECTOR$]
+				(
+					([$TABLE_NAME$].plid = ?) [$AND_OR_CONNECTOR$]
+					(lower([$TABLE_NAME$].description) LIKE ?) [$AND_OR_CONNECTOR$]
+					([$TABLE_NAME$].userManagerId = ?) [$AND_OR_CONNECTOR$]
+					([$TABLE_NAME$].status = ?) [$AND_OR_CONNECTOR$]
+				)
+			ORDER BY createDate DESC
+		]]>
+	</sql>
+</custom-sql>

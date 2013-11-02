@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="it.smc.liferay.feedback.model.Manager">
+		<field name="managerId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="plid" type="long" />
+		<field name="description" type="String">
+			<hint name="max-length">4000</hint>
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="url" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="userAgent" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="internalNote" type="String" />
+		<field name="file" type="String" />
+		<field name="userManagerId" type="long" />
+		<field name="status" type="int" />
+		<field name="statusDate" type="Date" />
+	</model>
+</model-hints>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resource-action-mapping>
+	<portlet-resource>
+		<portlet-name>1</portlet-name>
+		<supports>
+			<action-key>CONFIGURATION</action-key>
+			<action-key>VIEW</action-key>
+		</supports>
+		<site-member-defaults>
+			<action-key>VIEW</action-key>
+		</site-member-defaults>
+		<guest-defaults/>
+		<guest-unsupported>
+			<action-key>VIEW</action-key>
+		</guest-unsupported>
+	</portlet-resource>
+	<model-resource>
+		<model-name>it.smc.liferay.feedback.manager</model-name>
+		<portlet-ref>
+			<portlet-name>1</portlet-name>
+		</portlet-ref>
+		<supports>
+			<action-key>ADD_FEEDBACK</action-key>
+			<action-key>PERMISSIONS</action-key>
+		</supports>
+		<site-member-defaults>
+			<action-key>ADD_FEEDBACK</action-key>
+		</site-member-defaults>
+		<guest-defaults/>
+		<guest-unsupported>
+			<action-key>ADD_FEEDBACK</action-key>
+			<action-key>PERMISSIONS</action-key>
+		</guest-unsupported>
+	</model-resource>
+	<model-resource>
+		<model-name>it.smc.liferay.feedback.model.Manager</model-name>
+		<portlet-ref>
+			<portlet-name>1</portlet-name>
+		</portlet-ref>
+		<supports>
+			<action-key>DELETE</action-key>
+			<action-key>PERMISSIONS</action-key>
+			<action-key>UPDATE</action-key>
+			<action-key>VIEW</action-key>
+		</supports>
+		<site-member-defaults>
+			<action-key>VIEW</action-key>
+		</site-member-defaults>
+		<guest-defaults>
+		</guest-defaults>
+		<guest-unsupported>
+			<action-key>VIEW</action-key>
+			<action-key>PERMISSIONS</action-key>
+		</guest-unsupported>
+	</model-resource>
+</resource-action-mapping>

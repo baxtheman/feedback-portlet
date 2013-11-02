@@ -1,0 +1,8 @@
+#dockbar li.feedback a {
+	padding-left: 20px;
+	background: url(../images/megaphone.png) no-repeat 0 50%;
+}
+
+#dockbar li.feedback a:hover {
+
+}

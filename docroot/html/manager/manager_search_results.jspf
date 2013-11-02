@@ -1,0 +1,25 @@
+
+
+<%
+results = ManagerLocalServiceUtil.search(
+		company.getCompanyId(), scopeGroupId,
+		searchTerms.getPlid(),
+		searchTerms.getDescription(),
+		searchTerms.getUserManagerId(),
+		searchTerms.getStatus(),
+		searchTerms.isAndOperator(), searchContainer.getStart(), searchContainer.getEnd(),
+		searchContainer.getOrderByComparator());
+
+total = ManagerLocalServiceUtil.searchCount(
+		company.getCompanyId(), scopeGroupId,
+		searchTerms.getPlid(),
+		searchTerms.getDescription(),
+		searchTerms.getUserManagerId(),
+		searchTerms.getStatus(),
+		searchTerms.isAndOperator());
+
+pageContext.setAttribute("results", results);
+pageContext.setAttribute("total", total);
+
+//System.out.println("total = " + total);
+%>
