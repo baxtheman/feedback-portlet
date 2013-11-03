@@ -14,13 +14,17 @@ Sorry but only Internet Explorer is not supported due to its limitations.
 
 Plugin setup: in control panel you find the feedback manager portlet to switch on/off feedback for site and to setup the email notification settings.
 
-Tested only in tomcat bundle.
-
 Available in italian and english language
 
 
 [Guide gallery](http://www.dropmocks.com/mCE3Lf)
 
+
+## Liferay compatibility:
+
+Version 6.1 GA2
+
+Tested only in tomcat bundle.
 
 ## Software acknowledgments:
 
