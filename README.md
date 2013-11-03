@@ -3,6 +3,10 @@ feedback-portlet
 
 Liferay plugin to collect page screenshot and suggestions from users
 
+## Download
+
+[Get the war file](http://ge.tt/5OjGO4x/v/0)
+
 ## Description
 
 Plugin to collect screenshot and feedback about page or part of it from the portal users. Screenshot feedback with annotation is sent to the server and saved. Site administrator collects feedbacks (image, date&time, page visited and screenshot) from portal user and can operate site improvements.
