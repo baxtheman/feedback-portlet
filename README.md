@@ -5,7 +5,7 @@ Liferay plugin to collect page screenshot and suggestions from users
 
 ## Download
 
-[Get the war file](http://ge.tt/5OjGO4x/v/0)
+Go to Liferay marketplace (coming soon)
 
 ## Description
 
