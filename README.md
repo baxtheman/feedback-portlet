@@ -5,7 +5,7 @@ Liferay plugin to collect page screenshot and suggestions from users
 
 ## Download
 
-Go to Liferay marketplace (coming soon)
+[Go to Liferay marketplace](https://www.liferay.com/it/marketplace/-/mp/application/31850375)
 
 ## Description
 
