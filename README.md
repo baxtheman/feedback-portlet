@@ -21,8 +21,6 @@ Plugin setup: in control panel you find the feedback manager portlet to switch o
 Available in italian and english language
 
 
-[Guide gallery](http://www.dropmocks.com/mCE3Lf)
-
 
 ## Liferay compatibility:
 
